@@ -40,10 +40,10 @@ export default function TopBar() {
     if (team?.id) navigate(`/team/${team.id}/edge`);
   };
 
-  // Edge *Dashboard* (the public Stats Lab at statsleuthgame.github.io/Edge/)
+  // Edge *Dashboard* (the public Stats Lab at codyglenostler.github.io/Edge/)
   // — always opens in a new tab so it doesn't eat our SPA navigation stack.
   const openEdgeDashboard = () => {
-    window.open("https://statsleuthgame.github.io/Edge/", "_blank", "noopener,noreferrer");
+    window.open("https://codyglenostler.github.io/Edge/", "_blank", "noopener,noreferrer");
   };
 
   const openSearch = () => {

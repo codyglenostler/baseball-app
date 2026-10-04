@@ -1081,7 +1081,7 @@ export const fetchRefreshStatus = async () => {
 
 // Hardcoded repo + workflow identity — matches the existing
 // refresh-fantasy.yml workflow that already runs on cron.
-const GH_REPO_OWNER = "statsleuthgame";
+const GH_REPO_OWNER = "codyglenostler";
 const GH_REPO_NAME  = "baseball-app";
 const GH_WORKFLOW   = "refresh-fantasy.yml";
 const GH_BRANCH     = "main";

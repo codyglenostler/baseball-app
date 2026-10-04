@@ -66,7 +66,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         FRONTEND_ORIGIN,
-        "https://statsleuthgame.github.io",
+        "https://codyglenostler.github.io",
         "http://localhost:5173",
         "http://localhost:3000",
     ],

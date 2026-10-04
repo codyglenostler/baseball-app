@@ -7,4 +7,4 @@ services:
     plan: free
     envVars:
       - key: FRONTEND_ORIGIN
-        value: https://statsleuthgame.github.io
+        value: https://codyglenostler.github.io

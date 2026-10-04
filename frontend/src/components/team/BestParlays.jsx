@@ -536,8 +536,8 @@ function TokenSettingsModal({ onClose, onSaved }) {
               github.com/settings/personal-access-tokens/new
             </a>
           </li>
-          <li>Resource owner: <b>statsleuthgame</b></li>
-          <li>Repository access: <b>Only selected → <code>statsleuthgame/baseball-app</code></b></li>
+          <li>Resource owner: <b>codyglenostler</b></li>
+          <li>Repository access: <b>Only selected → <code>codyglenostler/baseball-app</code></b></li>
           <li>Repository permissions: <b>Actions → Read and write</b></li>
           <li>Copy the token and paste below</li>
         </ol>

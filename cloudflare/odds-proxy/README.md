@@ -54,8 +54,7 @@ the rest of that day's slate).
   consensus line.
 - Any field is `null` when no book offered that market for the event.
 
-CORS allowlist: `https://statsleuthgame.github.io`, `http://localhost:5173`,
-`http://localhost:4173`. Edit `ALLOWED_ORIGINS` in `src/index.js` to extend.
+CORS is open to any origin for this public, read-only endpoint (`Access-Control-Allow-Origin: *` in `src/index.js`).
 
 ## One-time deploy
 

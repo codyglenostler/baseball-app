@@ -2,7 +2,7 @@
 
 A mobile-first MLB dashboard that brings team context, live game data, player analytics, and experimental fantasy projections into one interface. The project combines a React frontend, a Python/FastAPI backend, scheduled data pipelines, and a 3D ball-flight viewer.
 
-**[Open the demo](https://statsleuthgame.github.io/baseball-app/)** · **[Model evaluation and limitations](docs/MODEL_EVALUATION.md)**
+**[Open the demo](https://codyglenostler.github.io/baseball-app/)** · **[Model evaluation and limitations](docs/MODEL_EVALUATION.md)**
 
 ![Seattle Mariners dashboard with the next matchup, upcoming games, and division standings](docs/images/team-dashboard.png)
 
