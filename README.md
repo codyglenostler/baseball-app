@@ -12,6 +12,12 @@ A mobile-first MLB dashboard that brings team context, live game data, player an
 
 Choose a team, open its dashboard, then explore **Matchup**, **Scores**, **Schedule**, or **Roster**. The dashboard combines the next game, recent player form, transactions, and standings. Live game views depend on the MLB schedule and upstream data availability.
 
+## A quick review
+
+1. **Try the core workflow:** choose a team in the [dashboard](https://codyglenostler.github.io/baseball-app/), then open its schedule, roster, or a game. These views demonstrate the data application without needing an odds-provider account.
+2. **Follow the data:** inspect [the API client](frontend/src/api/client.js) and [deployment/data workflows](.github/workflows/) to see how live requests and committed snapshots reach the interface.
+3. **Evaluate the modeling work:** read [the evaluation notes](docs/MODEL_EVALUATION.md), then compare [the projection code](backend/app/services/fantasy.py) with [its tests](backend/tests/test_fantasy.py). The evaluation notes distinguish tested implementation behavior from predictive performance.
+
 ## What the project demonstrates
 
 - **Data integration:** MLB Stats API, Statcast features, and FanGraphs projections feed a shared application experience.
