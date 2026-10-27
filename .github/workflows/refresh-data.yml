@@ -93,13 +93,19 @@ jobs:
             echo "No data changes to commit."
           else
             git commit -m "chore(data): daily refresh $(date -u +%Y-%m-%dT%H:%MZ)"
+            pushed=false
             for i in 1 2 3; do
               if git push; then
+                pushed=true
                 break
               fi
               echo "Push rejected (attempt $i/3) — rebasing onto remote and retrying..."
-              git pull --rebase origin main
+              git pull --rebase -X theirs origin main
             done
+            if [ "$pushed" != true ]; then
+              echo "Unable to publish refreshed baseball data after 3 attempts."
+              exit 1
+            fi
           fi
 
       # Save data as artifact so deploy workflow can reuse it
