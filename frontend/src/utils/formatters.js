@@ -22,6 +22,15 @@ export function formatGameTime(isoDate) {
   return d.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" });
 }
 
+export function isToday(isoDate, now = new Date()) {
+  if (!isoDate) return false;
+  const date = new Date(isoDate);
+  if (Number.isNaN(date.getTime())) return false;
+  return date.getFullYear() === now.getFullYear()
+    && date.getMonth() === now.getMonth()
+    && date.getDate() === now.getDate();
+}
+
 /** @param {number|string} teamId */
 export const getTeamAbbr = (teamId) => {
   // Dynamic lookup — import would create circular dep, so inline the essentials
